@@ -15,13 +15,13 @@ public class MyCommand extends BaseCommand {
 
     public MyCommand() {
         super("mycommand", "A sample command", "alias1", "alias2");
-        registerArgument(new MyCommandArgument());
-        // Add more arguments as needed
     }
 
     @Override
     public void onCommand(CommandSender sender, Command command, String label, String[] args) {
         // Custom logic for command execution
+
+        return true;
     }
 }
 ```
